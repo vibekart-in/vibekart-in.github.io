@@ -996,3 +996,12 @@ body {
   color: #3a6b4a;
   line-height: 1.7;
 }
+/* ===== PRODUCT IMAGE ===== */
+.product-img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: var(--surface);
+  padding: 0.5rem;
+}

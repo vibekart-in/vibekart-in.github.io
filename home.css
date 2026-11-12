@@ -222,3 +222,29 @@
 @media (prefers-reduced-motion: reduce) {
   .home-page *, .home-page *::before, .home-page *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+
+/* Final editorial polish: restrained depth, clearer interaction states. */
+.home-page .vk-header { transition: box-shadow .25s ease, background .25s ease; }
+.home-page .vk-navigation a { position: relative; padding-block: 8px; }
+.home-page .vk-navigation a::after {
+  position: absolute; right: 0; bottom: 1px; left: 0; height: 1px;
+  content: ''; background: var(--vk-rust); transform: scaleX(0);
+  transform-origin: left; transition: transform .22s ease;
+}
+.home-page .vk-navigation a:hover::after,
+.home-page .vk-navigation a:focus-visible::after { transform: scaleX(1); }
+.home-page .vk-category-card { isolation: isolate; }
+.home-page .vk-category-card img { will-change: transform; }
+.home-page .vk-product-card { transition: transform .24s ease; }
+.home-page .vk-product-card:hover { transform: translateY(-3px); }
+.home-page .vk-product-image { background: #e8e1d7; }
+.home-page .vk-footer a:focus-visible,
+.home-page .vk-navigation a:focus-visible { outline-offset: 5px; }
+.home-page .vk-search:focus-within { border-bottom-width: 2px; }
+.home-page .vk-no-results { margin-top: 22px; }
+@media (max-width: 760px) {
+  .home-page .vk-hero { padding-top: 48px; }
+  .home-page .vk-section { padding-block: 76px 82px; }
+  .home-page .vk-featured-section { padding-block: 75px 78px; }
+}

@@ -172,3 +172,28 @@
 @media(prefers-reduced-motion:reduce) {
   .category-page *,.category-page *::before,.category-page *::after { scroll-behavior:auto !important; animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
 }
+
+
+/* Final editorial polish: matching focus, hover and card rhythm. */
+.category-page .vk-navigation a { position: relative; }
+.category-page .vk-navigation a::after {
+  position: absolute; right: 0; bottom: -5px; left: 0; height: 1px;
+  content: ''; background: var(--vk-rust); transform: scaleX(0);
+  transform-origin: left; transition: transform .22s ease;
+}
+.category-page .vk-navigation a:hover::after,
+.category-page .vk-navigation a[aria-current="page"]::after { transform: scaleX(1); }
+.category-page .vk-product-card { box-shadow: 0 2px 8px rgba(44,37,27,.025); }
+.category-page .vk-product-card:hover { box-shadow: 0 16px 34px rgba(44,37,27,.085); }
+.category-page .vk-search:focus-within { border-bottom-width: 2px; }
+.category-page .vk-product-action:focus-visible,
+.category-page .vk-dialog-close:focus-visible { outline-offset: 4px; }
+.category-page .vk-footer a { transition: color .2s ease; }
+.category-page .vk-product-dialog[open] { animation: vk-dialog-in .2s ease-out; }
+@keyframes vk-dialog-in {
+  from { opacity: 0; transform: translateY(8px) scale(.985); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .category-page .vk-product-dialog[open] { animation: none; }
+}

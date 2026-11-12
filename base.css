@@ -50,3 +50,35 @@ textarea {
     scroll-behavior: auto;
   }
 }
+
+/* Small accessibility refinements shared by the refreshed pages. */
+::selection {
+  background: #ead0c2;
+  color: #25231f;
+}
+
+.vk-skip-link {
+  position: fixed;
+  z-index: 1000;
+  top: 12px;
+  left: 12px;
+  padding: 11px 15px;
+  transform: translateY(-160%);
+  background: #25231f;
+  color: #fffefa;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform .18s ease;
+}
+.vk-skip-link:focus { transform: translateY(0); }
+img { height: auto; }
+button { color: inherit; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}

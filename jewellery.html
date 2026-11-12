@@ -1,202 +1,204 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jewellery & Accessories – VibeKart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ed">
+  <meta name="description" content="Discover the finishing touches: understated jewellery, statement details and accessories that make an outfit feel personal.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jewellery &amp; accessories — VibeKart">
+  <meta property="og:description" content="Discover the finishing touches: understated jewellery, statement details and accessories that make an outfit feel personal.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1000&q=85">
+  <title>Jewellery &amp; accessories — VibeKart</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="category.css">
+  <script src="home.js" defer></script>
+  <script src="category.js" defer></script>
 </head>
-<body>
-
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <a href="index.html" class="logo">VibeKart</a>
-    <ul class="nav-links">
-      <li><a href="clothing.html">Clothing</a></li>
-      <li><a href="beauty.html">Beauty</a></li>
-      <li><a href="jewellery.html">Jewellery</a></li>
-      <li><a href="books.html">Books</a></li>
-      <li><a href="deals.html">Deals</a></li>
-    </ul>
-    <a href="deals.html" class="nav-cta">Weekly Picks</a>
-  </nav>
-  <!-- ===== END NAVBAR ===== -->
-
-  <!-- ===== PAGE HEADER ===== -->
-  <div class="page-header">
-    <p class="page-header-tag">💍 Jewellery & Accessories</p>
-    <h1>Look Expensive,<br/> <em>Spend Less.</em></h1>
-    <p class="page-header-sub">Affordable jewellery that looks like a million bucks — rings, earrings, necklaces & more. Updated every week.</p>
+<body class="category-page category-jewellery" data-category="jewellery">
+<div class="vk-announcement">
+  <p><span class="vk-announcement-dot" aria-hidden="true"></span> A considered edit of things worth discovering</p>
+  <a href="about.html">Get to know VibeKart <span aria-hidden="true">↗</span></a>
+</div>
+<header class="vk-header">
+  <div class="vk-header-inner vk-shell">
+    <a class="vk-logo" href="index.html" aria-label="VibeKart home">vibe<span>kart</span><i>.</i></a>
+    <button class="vk-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="vk-navigation"><span></span><span></span></button>
+    <nav class="vk-navigation" id="vk-navigation" aria-label="Main navigation">
+      <a href="index.html#categories">Discover</a>
+      <a href="index.html#featured">The edit</a>
+      <a href="clothing.html" data-nav-page="clothing">Fashion</a>
+      <a href="beauty.html" data-nav-page="beauty">Beauty</a>
+      <a href="jewellery.html" data-nav-page="jewellery">Jewellery</a>
+      <a href="books.html" data-nav-page="books">Books</a>
+      <a href="deals.html" data-nav-page="deals">The shortlist</a>
+    </nav>
+    <a class="vk-header-cta" href="deals.html">Explore the edit <span aria-hidden="true">↗</span></a>
   </div>
-  <!-- ===== END PAGE HEADER ===== -->
-
-  <!-- ===== JEWELLERY PRODUCTS ===== -->
-  <section class="product-section">
-    <div class="products-grid">
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Jewellery</span>
-          <span class="badge badge-viral">Viral</span>
-        </div>
-        <div class="product-icon">💍</div>
-        <h3 class="product-name">Minimal Silver Ring Set</h3>
-        <p class="product-desc">Set of 5 stackable silver rings — dainty, minimal & totally aesthetic. Tarnish-resistant. The ring stack all over Pinterest & Reels right now.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹499</span>
-            <span class="product-mrp">₹999</span>
-          </div>
-          <span class="product-platform amazon">Amazon</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
+</header>
+<main>
+  <section class="vk-category-hero vk-shell" aria-labelledby="category-title">
+    <div class="vk-category-copy">
+      <p class="vk-eyebrow"><span class="vk-eyebrow-line"></span>THE DETAILS COLLECTION</p>
+      <p class="vk-breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Jewellery &amp; accessories</span></p>
+      <h1 id="category-title">The little details<br>make it <em>yours.</em></h1>
+      <p class="vk-category-description">A subtle sparkle or a statement piece can change the whole feeling. Find the details that speak your style.</p>
+      <div class="vk-category-actions">
+        <a class="vk-button vk-button-dark" href="#collection">Explore the collection <span aria-hidden="true">↘</span></a>
+        <a class="vk-text-link" href="index.html#categories">All categories <span aria-hidden="true">↗</span></a>
       </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Jewellery</span>
-          <span class="badge badge-hot">Hot</span>
-        </div>
-        <div class="product-icon">📿</div>
-        <h3 class="product-name">Layered Pearl Necklace</h3>
-        <p class="product-desc">3-layer faux pearl necklace with a gold-tone chain. Elegant yet affordable. Pairs beautifully with both western & ethnic outfits.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹349</span>
-            <span class="product-mrp">₹799</span>
-          </div>
-          <span class="product-platform myntra">Myntra</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Jewellery</span>
-          <span class="badge badge-new">New</span>
-        </div>
-        <div class="product-icon">✨</div>
-        <h3 class="product-name">Oxidised Jhumka Earrings</h3>
-        <p class="product-desc">Traditional oxidised silver jhumkas with a boho twist. Lightweight, hypoallergenic & perfect for festive looks or everyday ethnic wear.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹279</span>
-            <span class="product-mrp">₹599</span>
-          </div>
-          <span class="product-platform amazon">Amazon</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Jewellery</span>
-          <span class="badge badge-deal">Deal</span>
-        </div>
-        <div class="product-icon">⌚</div>
-        <h3 class="product-name">Minimalist Gold Watch</h3>
-        <p class="product-desc">Slim dial, mesh strap, gold tone finish. Looks 10x its price. Water resistant, scratch-proof glass. The accessory completing every OOTD right now.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹899</span>
-            <span class="product-mrp">₹1,799</span>
-          </div>
-          <span class="product-platform flipkart">Flipkart</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Jewellery</span>
-          <span class="badge badge-viral">Viral</span>
-        </div>
-        <div class="product-icon">💛</div>
-        <h3 class="product-name">Gold Charm Bracelet</h3>
-        <p class="product-desc">Dainty gold-plated bracelet with cute charms. Anti-tarnish coating, adjustable chain. The bracelet stack everyone's wearing on Reels this month.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹399</span>
-            <span class="product-mrp">₹799</span>
-          </div>
-          <span class="product-platform amazon">Amazon</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Jewellery</span>
-          <span class="badge badge-hot">Hot</span>
-        </div>
-        <div class="product-icon">🌙</div>
-        <h3 class="product-name">Crescent Moon Pendant Set</h3>
-        <p class="product-desc">Delicate moon & star pendant necklace with matching earrings. Silver-plated, gift-boxed. The celestial jewellery set trending across Instagram.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹449</span>
-            <span class="product-mrp">₹899</span>
-          </div>
-          <span class="product-platform myntra">Myntra</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
+      <div class="vk-category-footnote"><span aria-hidden="true">✳</span><p>Thoughtful ideas, not one-size-fits-all advice.<br><small>Always check exact product information before buying.</small></p></div>
+    </div>
+    <div class="vk-category-visual">
+      <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1000&q=85" alt="A curated arrangement of jewellery pieces" fetchpriority="high">
+      <div class="vk-category-visual-stamp"><span>THE</span><strong>JEWELLERY<br>EDIT</strong><span>VIBEKART · 6 PICKS</span></div>
+      <div class="vk-category-visual-caption"><span>JEWELLERY / COLLECTION 03</span><strong>The accessories edit</strong></div>
     </div>
   </section>
-  <!-- ===== END JEWELLERY PRODUCTS ===== -->
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="index.html" class="logo">VibeKart</a>
-        <p class="footer-tagline">Curating the internet's most talked-about products. Updated every week, honest always.</p>
-        <div class="footer-socials">
-          <a href="#">📸 Instagram</a>
-          <a href="#">▶ YouTube</a>
-          <a href="#">💬 WhatsApp</a>
-          <a href="#">✈️ Telegram</a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="clothing.html">Clothing & Fashion</a></li>
-          <li><a href="beauty.html">Beauty & Skincare</a></li>
-          <li><a href="jewellery.html">Jewellery & Accessories</a></li>
-          <li><a href="books.html">Books & Learning</a></li>
-          <li><a href="deals.html">Hot Deals</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Follow Us</h4>
-        <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">YouTube Shorts</a></li>
-          <li><a href="#">WhatsApp Channel</a></li>
-          <li><a href="#">Telegram</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Info</h4>
-        <ul>
-          <li><a href="about.html">About VibeKart</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="affiliate-disclaimer.html">Affiliate Disclaimer</a></li>
-        </ul>
+  <section class="vk-category-ribbon" aria-label="VibeKart values"><div class="vk-shell"><span>CURIOUS FINDS</span><i>✳</i><span>CONSIDERED CHOICES</span><i>✳</i><span>YOUR STYLE, YOUR CALL</span><i>✳</i><span>ALWAYS CHECK THE DETAILS</span></div></section>
+  <section class="vk-category-products vk-shell" id="collection" aria-labelledby="collection-title">
+    <div class="vk-section-heading vk-category-heading">
+      <div><p class="vk-eyebrow">JEWELLERY / COLLECTION 03</p><h2 id="collection-title">The accessories edit <em>starts here.</em></h2><p class="vk-section-intro">A mix of everyday accents and occasion pieces. Confirm materials, dimensions, care instructions and seller details with the retailer.</p></div>
+      <div class="vk-category-tools">
+        <label class="vk-search-label" for="vk-search-input">FIND SOMETHING</label>
+        <div class="vk-search"><span aria-hidden="true">⌕</span><input id="vk-search-input" type="search" placeholder="Search this collection..." autocomplete="off"><kbd>/</kbd></div>
+        <p><strong id="vk-result-count">6</strong> curated picks</p>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2025 VibeKart. All rights reserved.</p>
-      <p class="footer-disclosure">Affiliate Disclosure: VibeKart participates in the Amazon Associates & Flipkart Affiliate programmes. We earn a small commission when you buy through our links — at no extra cost to you.</p>
+    <p class="vk-image-disclaimer">Editorial imagery is used for this preview and may not depict the exact item. Compare with the retailer’s product photos and specifications before buying.</p>
+    <div class="vk-product-grid" id="vk-product-grid">
+      <article class="vk-product-card" data-search="minimal silver ring set a stackable ring styling idea. check the listed metal, finish, sizing and care instructions before ordering.">
+      <div class="vk-product-image">
+        <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1000&q=85" alt="Minimal jewellery and rings" loading="lazy">
+        <span class="vk-product-index">01</span>
+        <span class="vk-product-photo-label">VIBEKART EDIT</span>
+      </div>
+      <div class="vk-product-body">
+        <div class="vk-product-overline"><span>JEWELLERY &AMP; ACCESSORIES</span><span>CURATED FIND</span></div>
+        <h3>Minimal Silver Ring Set</h3>
+        <p>A stackable ring styling idea. Check the listed metal, finish, sizing and care instructions before ordering.</p>
+        <div class="vk-product-meta"><span class="vk-retailer-status">Retailer link to be added</span><span class="vk-price-note">Check current details with retailer</span></div>
+        <button class="vk-product-action vk-product-action-muted" type="button" data-product-open data-product-name="Minimal Silver Ring Set" data-product-description="A stackable ring styling idea. Check the listed metal, finish, sizing and care instructions before ordering.">Preview product note <span aria-hidden="true">↗</span></button>
+      </div>
+    </article>
+<article class="vk-product-card" data-search="layered pearl necklace a layered necklace look that can add texture to a simple outfit. confirm the materials, chain length and clasp details with the seller.">
+      <div class="vk-product-image">
+        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1000&q=85" alt="Layered necklace styling" loading="lazy">
+        <span class="vk-product-index">02</span>
+        <span class="vk-product-photo-label">VIBEKART EDIT</span>
+      </div>
+      <div class="vk-product-body">
+        <div class="vk-product-overline"><span>JEWELLERY &AMP; ACCESSORIES</span><span>CURATED FIND</span></div>
+        <h3>Layered Pearl Necklace</h3>
+        <p>A layered necklace look that can add texture to a simple outfit. Confirm the materials, chain length and clasp details with the seller.</p>
+        <div class="vk-product-meta"><span class="vk-retailer-status">Retailer link to be added</span><span class="vk-price-note">Check current details with retailer</span></div>
+        <button class="vk-product-action vk-product-action-muted" type="button" data-product-open data-product-name="Layered Pearl Necklace" data-product-description="A layered necklace look that can add texture to a simple outfit. Confirm the materials, chain length and clasp details with the seller.">Preview product note <span aria-hidden="true">↗</span></button>
+      </div>
+    </article>
+<article class="vk-product-card" data-search="oxidised jhumka earrings a traditional-inspired accent for festive or everyday ethnic looks. check the weight, material and fastening details before purchase.">
+      <div class="vk-product-image">
+        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1000&q=85" alt="Decorative earrings and jewellery" loading="lazy">
+        <span class="vk-product-index">03</span>
+        <span class="vk-product-photo-label">VIBEKART EDIT</span>
+      </div>
+      <div class="vk-product-body">
+        <div class="vk-product-overline"><span>JEWELLERY &AMP; ACCESSORIES</span><span>CURATED FIND</span></div>
+        <h3>Oxidised Jhumka Earrings</h3>
+        <p>A traditional-inspired accent for festive or everyday ethnic looks. Check the weight, material and fastening details before purchase.</p>
+        <div class="vk-product-meta"><span class="vk-retailer-status">Retailer link to be added</span><span class="vk-price-note">Check current details with retailer</span></div>
+        <button class="vk-product-action vk-product-action-muted" type="button" data-product-open data-product-name="Oxidised Jhumka Earrings" data-product-description="A traditional-inspired accent for festive or everyday ethnic looks. Check the weight, material and fastening details before purchase.">Preview product note <span aria-hidden="true">↗</span></button>
+      </div>
+    </article>
+<article class="vk-product-card" data-search="minimalist gold watch a slim gold-tone watch styling idea. review the case size, strap material, movement and water-resistance details on the exact listing.">
+      <div class="vk-product-image">
+        <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=1000&q=85" alt="A classic wristwatch" loading="lazy">
+        <span class="vk-product-index">04</span>
+        <span class="vk-product-photo-label">VIBEKART EDIT</span>
+      </div>
+      <div class="vk-product-body">
+        <div class="vk-product-overline"><span>JEWELLERY &AMP; ACCESSORIES</span><span>CURATED FIND</span></div>
+        <h3>Minimalist Gold Watch</h3>
+        <p>A slim gold-tone watch styling idea. Review the case size, strap material, movement and water-resistance details on the exact listing.</p>
+        <div class="vk-product-meta"><span class="vk-retailer-status">Retailer link to be added</span><span class="vk-price-note">Check current details with retailer</span></div>
+        <button class="vk-product-action vk-product-action-muted" type="button" data-product-open data-product-name="Minimalist Gold Watch" data-product-description="A slim gold-tone watch styling idea. Review the case size, strap material, movement and water-resistance details on the exact listing.">Preview product note <span aria-hidden="true">↗</span></button>
+      </div>
+    </article>
+<article class="vk-product-card" data-search="gold charm bracelet a delicate bracelet concept with small decorative charms. check plating, clasp type, sizing and care guidance from the retailer.">
+      <div class="vk-product-image">
+        <img src="https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=1000&q=85" alt="Gold-tone bracelet styling" loading="lazy">
+        <span class="vk-product-index">05</span>
+        <span class="vk-product-photo-label">VIBEKART EDIT</span>
+      </div>
+      <div class="vk-product-body">
+        <div class="vk-product-overline"><span>JEWELLERY &AMP; ACCESSORIES</span><span>CURATED FIND</span></div>
+        <h3>Gold Charm Bracelet</h3>
+        <p>A delicate bracelet concept with small decorative charms. Check plating, clasp type, sizing and care guidance from the retailer.</p>
+        <div class="vk-product-meta"><span class="vk-retailer-status">Retailer link to be added</span><span class="vk-price-note">Check current details with retailer</span></div>
+        <button class="vk-product-action vk-product-action-muted" type="button" data-product-open data-product-name="Gold Charm Bracelet" data-product-description="A delicate bracelet concept with small decorative charms. Check plating, clasp type, sizing and care guidance from the retailer.">Preview product note <span aria-hidden="true">↗</span></button>
+      </div>
+    </article>
+<article class="vk-product-card" data-search="crescent moon pendant set a celestial-inspired pendant and earring combination. confirm the metal finish, dimensions and included pieces with the seller.">
+      <div class="vk-product-image">
+        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1000&q=85" alt="Pendant necklace and jewellery" loading="lazy">
+        <span class="vk-product-index">06</span>
+        <span class="vk-product-photo-label">VIBEKART EDIT</span>
+      </div>
+      <div class="vk-product-body">
+        <div class="vk-product-overline"><span>JEWELLERY &AMP; ACCESSORIES</span><span>CURATED FIND</span></div>
+        <h3>Crescent Moon Pendant Set</h3>
+        <p>A celestial-inspired pendant and earring combination. Confirm the metal finish, dimensions and included pieces with the seller.</p>
+        <div class="vk-product-meta"><span class="vk-retailer-status">Retailer link to be added</span><span class="vk-price-note">Check current details with retailer</span></div>
+        <button class="vk-product-action vk-product-action-muted" type="button" data-product-open data-product-name="Crescent Moon Pendant Set" data-product-description="A celestial-inspired pendant and earring combination. Confirm the metal finish, dimensions and included pieces with the seller.">Preview product note <span aria-hidden="true">↗</span></button>
+      </div>
+    </article>
     </div>
-  </footer>
-  <!-- ===== END FOOTER ===== -->
-
-  <script src="script.js"></script>
+    <p class="vk-no-results" id="vk-no-results" hidden>No matching picks. Try another search term.</p>
+  </section>
+  <section class="vk-category-note">
+    <div class="vk-shell vk-category-note-inner">
+      <span class="vk-note-star" aria-hidden="true">✳</span>
+      <div><p class="vk-eyebrow">A QUICK REMINDER</p><h2>Explore with curiosity.<br><em>Choose with care.</em></h2></div>
+      <p>VibeKart is a discovery starting point, not a retailer. Product details, materials, claims, pricing and availability can change. Review the full listing and seller information before making a purchase.</p>
+      <a class="vk-text-link" href="affiliate-disclaimer.html">How affiliate links work <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+</main>
+<footer class="vk-footer">
+  <div class="vk-shell">
+    <div class="vk-footer-main">
+      <div class="vk-footer-brand">
+        <a class="vk-logo vk-logo-light" href="index.html">vibe<span>kart</span><i>.</i></a>
+        <p>A considered edit of things to wear, use, read and love. Discover ideas, then choose what feels right for you.</p>
+      </div>
+      <div class="vk-footer-col">
+        <h2>Explore</h2>
+        <a href="clothing.html">Fashion</a><a href="beauty.html">Beauty</a><a href="jewellery.html">Jewellery</a><a href="books.html">Books</a><a href="deals.html">The shortlist</a>
+      </div>
+      <div class="vk-footer-col">
+        <h2>VibeKart</h2>
+        <a href="about.html">Our story</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy policy</a><a href="affiliate-disclaimer.html">Affiliate disclosure</a>
+      </div>
+    </div>
+    <div class="vk-footer-bottom">
+      <p>© <span id="vk-year">2026</span> VibeKart. All rights reserved.</p>
+      <p class="vk-disclosure">Some retailer links may be affiliate links. VibeKart may earn a commission from qualifying purchases at no extra cost to you. Product details, prices and availability can change; always confirm the current information with the retailer.</p>
+    </div>
+  </div>
+</footer>
+<dialog class="vk-product-dialog" id="vk-product-dialog" aria-labelledby="vk-dialog-title">
+  <div class="vk-dialog-inner">
+    <button class="vk-dialog-close" type="button" aria-label="Close dialog" data-dialog-close>×</button>
+    <p class="vk-eyebrow">A NOTE BEFORE YOU SHOP</p>
+    <h2 id="vk-dialog-title">Product details</h2>
+    <p id="vk-dialog-description" class="vk-dialog-description"></p>
+    <p class="vk-dialog-note">This is a portfolio preview. A verified retailer destination has not been connected to this item yet. Before publishing, confirm the exact product, seller, current price and availability.</p>
+    <button class="vk-button vk-button-dark" type="button" data-dialog-close>Got it <span aria-hidden="true">↗</span></button>
+  </div>
+</dialog>
 </body>
 </html>

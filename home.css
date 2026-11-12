@@ -1,11 +1,11 @@
 /* VibeKart editorial homepage refresh. Kept separate from shared styles.css. */
 .home-page {
   --vk-ink: #25231f;
-  --vk-muted: #77736c;
+  --vk-muted: #665f55;
   --vk-paper: #f7f4ed;
   --vk-white: #fffefa;
   --vk-line: #e6e0d5;
-  --vk-rust: #b85f42;
+  --vk-rust: #9f4e35;
   --vk-rust-dark: #93472f;
   --vk-olive: #777d61;
   background: var(--vk-paper);
@@ -48,7 +48,7 @@
 .vk-text-link:hover { color: var(--vk-rust); border-color: var(--vk-rust); }
 .vk-hero-footnote { display: flex; align-items: flex-start; gap: 12px; margin-top: 55px; color: #59554d; font-size: 11px; line-height: 1.6; }
 .vk-footnote-mark { font-size: 18px; color: var(--vk-rust); line-height: 1; }
-.vk-hero-footnote small { color: #969087; font-size: 9px; }
+.vk-hero-footnote small { color: #665f55; font-size: 9px; }
 .vk-hero-art { min-height: 500px; max-width: 590px; width: 100%; margin-left: auto; position: relative; }
 .vk-hero-photo-main { position: absolute; inset: 0 10% 6% 11%; overflow: hidden; background: #e7ded0; }
 .vk-hero-photo-main::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 55%, rgba(35,29,23,.18)); pointer-events: none; }
@@ -86,9 +86,11 @@
 .vk-search { height: 46px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid #cfc8bd; color: var(--vk-rust); }
 .vk-search > span { font-size: 25px; line-height: 1; }
 .vk-search input { width: 100%; min-width: 0; border: 0; outline: 0; background: transparent; color: var(--vk-ink); font: inherit; font-size: 11px; }
-.vk-search input::placeholder { color: #918b81; }
-.vk-search kbd { padding: 3px 7px; border: 1px solid #e3ddd2; color: #989187; font-size: 9px; }
-.vk-featured-side p { margin-top: 9px; color: #969087; font-size: 9px; }
+.vk-search input::placeholder { color: #665f55; }
+.vk-search:focus-within { border-bottom-color: var(--vk-rust); }
+
+.vk-search kbd { padding: 3px 7px; border: 1px solid #e3ddd2; color: #665f55; font-size: 9px; }
+.vk-featured-side p { margin-top: 9px; color: #665f55; font-size: 9px; }
 .vk-product-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
 .vk-product-card { min-width: 0; }
 .vk-product-image { position: relative; display: block; overflow: hidden; height: 320px; background: #e8e1d7; color: white !important; }
@@ -98,7 +100,7 @@
 .vk-image-label { position: absolute; left: 14px; bottom: 14px; padding: 8px 10px; background: rgba(37,35,31,.82); color: white; font-size: 7px; font-weight: 700; letter-spacing: .17em; }
 .vk-image-arrow { position: absolute; top: 12px; right: 12px; width: 30px; height: 30px; display: grid; place-items: center; background: var(--vk-white); color: var(--vk-ink); border-radius: 50%; font-size: 13px; }
 .vk-product-meta { display: flex; justify-content: space-between; gap: 10px; margin-top: 20px; color: var(--vk-rust); font-size: 7px; font-weight: 700; letter-spacing: .13em; }
-.vk-product-meta span:last-child { color: #a29b90; text-align: right; }
+.vk-product-meta span:last-child { color: #665f55; text-align: right; }
 .vk-product-card h3 { margin-top: 11px; font-family: 'Playfair Display', Georgia, serif; font-size: 22px; line-height: 1.18; font-weight: 600; letter-spacing: -.02em; }
 .vk-product-card > p { min-height: 48px; margin-top: 9px; color: var(--vk-muted); font-size: 11px; line-height: 1.75; }
 .vk-card-link { display: inline-flex; gap: 14px; align-items: center; margin-top: 16px; padding-bottom: 6px; border-bottom: 1px solid #cfc8bd; color: var(--vk-ink) !important; text-decoration: none; font-size: 10px; font-weight: 700; transition: color .2s, border .2s; }
@@ -110,7 +112,7 @@
 .vk-story-band { padding-block: 86px; overflow: hidden; background: #292720; color: white; }
 .vk-story-inner { display: grid; grid-template-columns: 110px 1fr .85fr; gap: 45px; align-items: center; }
 .vk-story-mark { align-self: start; color: rgba(255,255,255,.2); font-family: 'Playfair Display', serif; font-size: 54px; letter-spacing: -.09em; }
-.vk-story-mark span { color: #c67a5b; }
+.vk-story-mark span { color: #d18c6d; }
 .vk-story-copy { max-width: 480px; }
 .vk-story-copy .vk-eyebrow { color: #d18c6d; }
 .vk-story-copy h2 { margin-top: 20px; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(37px, 4vw, 55px); line-height: 1.06; font-weight: 600; letter-spacing: -.045em; }
@@ -130,11 +132,11 @@
 .vk-logo-light { color: white !important; }
 .vk-footer-brand > p { max-width: 255px; margin-top: 18px; color: rgba(255,255,255,.5); font-size: 11px; line-height: 1.8; }
 .vk-footer-col { display: flex; flex-direction: column; align-items: flex-start; gap: 11px; }
-.vk-footer-col h2 { margin-bottom: 8px; color: rgba(255,255,255,.42); font-size: 8px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+.vk-footer-col h2 { margin-bottom: 8px; color: rgba(255,255,255,.62); font-size: 8px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
 .vk-footer-col a { color: rgba(255,255,255,.74) !important; text-decoration: none; font-size: 10px; transition: color .2s; }
 .vk-footer-col a:hover { color: #d18c6d !important; }
-.vk-footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.13); color: rgba(255,255,255,.43); font-size: 9px; }
-.vk-disclosure { margin-top: 15px; max-width: 750px; color: rgba(255,255,255,.34); font-size: 8px; line-height: 1.7; }
+.vk-footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.13); color: rgba(255,255,255,.62); font-size: 9px; }
+.vk-disclosure { margin-top: 15px; max-width: 750px; color: rgba(255,255,255,.62); font-size: 8px; line-height: 1.7; }
 @media (max-width: 1050px) {
   .home-page .vk-shell, .vk-header-inner { width: min(100% - 54px, 1240px); }
   .vk-hero { gap: 4%; min-height: 570px; }

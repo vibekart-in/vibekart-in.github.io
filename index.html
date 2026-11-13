@@ -1,524 +1,238 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>VibeKart – Shop the Vibe</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ed">
+  <meta name="description" content="Discover a considered edit of fashion, beauty, jewellery, books and everyday finds at VibeKart.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VibeKart — Good finds. Better taste.">
+  <meta property="og:description" content="A considered edit of things worth discovering.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=85">
+  <title>VibeKart — Good finds. Better taste.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="home.css">
+  <script src="home.js" defer></script>
 </head>
-<body>
-
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <a href="index.html" class="logo">VibeKart</a>
-    <ul class="nav-links">
-      <li><a href="clothing.html">Clothing</a></li>
-      <li><a href="beauty.html">Beauty</a></li>
-      <li><a href="jewellery.html">Jewellery</a></li>
-      <li><a href="books.html">Books</a></li>
-      <li><a href="deals.html">Deals</a></li>
-    </ul>
-    <a href="deals.html" class="nav-cta">Weekly Picks</a>
-  </nav>
-  <!-- ===== END NAVBAR ===== -->
-   <!-- ===== HERO ===== -->
-  <section class="hero">
-
-    <!-- Left Side -->
-    <div class="hero-left">
-      <p class="hero-tag">— Curated for the curious</p>
-      <h1>Things you didn't<br/>know you <em>needed.</em></h1>
-      <p class="hero-sub">
-        Viral products, trending finds & honest picks — across Clothing, Beauty, Jewellery & Gadgets. Direct links to Amazon & Flipkart, no fluff.
-      </p>
-      <div class="hero-btns">
-        <a href="#categories" class="btn-primary">Browse All Picks ↓</a>
-        <a href="deals.html" class="btn-secondary">Get weekly drops</a>
-      </div>
-      <p class="hero-note">✦ Updated every week · Honest picks only</p>
-    </div>
-
-    <!-- Right Side — Product Cards -->
-    <div class="hero-right">
-      <div class="hero-card">
-        <span class="hero-card-icon">👗</span>
-        <p class="hero-card-name">Floral Summer Dress</p>
-        <p class="hero-card-price">₹799</p>
-      </div>
-      <div class="hero-card">
-        <span class="hero-card-icon">💄</span>
-        <p class="hero-card-name">Lip Gloss Set</p>
-        <p class="hero-card-price">₹349</p>
-      </div>
-      <div class="hero-card">
-        <span class="hero-card-icon">💍</span>
-        <p class="hero-card-name">Silver Ring</p>
-        <p class="hero-card-price">₹499</p>
-      </div>
-      <div class="hero-card">
-        <span class="hero-card-icon">🎧</span>
-        <p class="hero-card-name">Noise-Cancelling Earbuds</p>
-        <p class="hero-card-price">₹1,999</p>
-      </div>
-    </div>
-
-  </section>
-  <!-- ===== END HERO ===== -->
-   <!-- ===== TICKER ===== -->
-  <div class="ticker-wrap">
-    <div class="ticker-track">
-      <span>Trending on Instagram</span>
-      <span class="dot">·</span>
-      <span>Sold 500+ this week</span>
-      <span class="dot">·</span>
-      <span>Amazon's Choice</span>
-      <span class="dot">·</span>
-      <span>Flipkart Best Deals</span>
-      <span class="dot">·</span>
-      <span>As seen on Reels</span>
-      <span class="dot">·</span>
-      <span>Editor's Picks</span>
-      <span class="dot">·</span>
-      <span>Free Prime Delivery</span>
-      <span class="dot">·</span>
-      <span>Genuinely useful stuff</span>
-      <span class="dot">·</span>
-      <!-- Duplicate for seamless loop -->
-      <span>Trending on Instagram</span>
-      <span class="dot">·</span>
-      <span>Sold 500+ this week</span>
-      <span class="dot">·</span>
-      <span>Amazon's Choice</span>
-      <span class="dot">·</span>
-      <span>Flipkart Best Deals</span>
-      <span class="dot">·</span>
-      <span>As seen on Reels</span>
-      <span class="dot">·</span>
-      <span>Editor's Picks</span>
-      <span class="dot">·</span>
-      <span>Free Prime Delivery</span>
-      <span class="dot">·</span>
-      <span>Genuinely useful stuff</span>
-      <span class="dot">·</span>
-    </div>
+<body class="home-page">
+  <a class="vk-skip-link" href="#main-content">Skip to content</a>
+  <div class="vk-announcement">
+    <p><span class="vk-announcement-dot" aria-hidden="true"></span> A considered edit of things worth discovering</p>
+    <a href="about.html">Get to know VibeKart <span aria-hidden="true">↗</span></a>
   </div>
-  <!-- ===== END TICKER ===== -->
-   <!-- ===== CLOTHING SECTION ===== -->
-  <section class="product-section" id="clothing">
 
-    <div class="section-header">
-      <div class="section-header-left">
-        <p class="section-tag">👗 Section 01</p>
-        <h2>Clothing & Fashion</h2>
-        <p class="section-desc">Trending outfits & styles blowing up on Reels — dresses, tops, co-ords & more.</p>
-      </div>
-      <a href="clothing.html" class="view-all">View all →</a>
+  <header class="vk-header">
+    <div class="vk-header-inner">
+      <a class="vk-logo" href="index.html" aria-label="VibeKart home">vibe<span>kart</span><i>.</i></a>
+
+      <button class="vk-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="vk-navigation">
+        <span></span><span></span>
+      </button>
+
+      <nav class="vk-navigation" id="vk-navigation" aria-label="Main navigation">
+        <a href="#categories">Discover</a>
+        <a href="#featured">The edit</a>
+        <a href="clothing.html">Fashion</a>
+        <a href="beauty.html">Beauty</a>
+        <a href="about.html">Our story</a>
+      </nav>
+
+      <a class="vk-header-cta" href="#featured">Explore finds <span aria-hidden="true">↗</span></a>
     </div>
+  </header>
 
-    <div class="products-grid">
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Clothing</span>
-          <span class="badge badge-viral">Viral</span>
+  <main id="main-content">
+    <section class="vk-hero vk-shell" aria-labelledby="hero-title">
+      <div class="vk-hero-copy">
+        <p class="vk-eyebrow"><span class="vk-eyebrow-line"></span> THE EVERYDAY DISCOVERY EDIT</p>
+        <h1 id="hero-title">Good finds.<br>Better <em>taste.</em></h1>
+        <p class="vk-hero-description">A little inspiration for the things you wear, use, read and love. Explore thoughtful picks across style, beauty and everyday living.</p>
+        <div class="vk-hero-actions">
+          <a class="vk-button vk-button-dark" href="#categories">Explore the edit <span aria-hidden="true">↘</span></a>
+          <a class="vk-text-link" href="about.html">What is VibeKart? <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="product-icon">👗</div>
-        <h3 class="product-name">Floral Summer Dress</h3>
-        <p class="product-desc">Light, breezy & effortlessly stylish. This floral dress is all over Instagram Reels this season. Available in 6 colours.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹799</span>
-            <span class="product-mrp">₹1,499</span>
-          </div>
-          <span class="product-platform amazon">Amazon</span>
+        <div class="vk-hero-footnote">
+          <span class="vk-footnote-mark" aria-hidden="true">✳</span>
+          <span>Curious finds, considered choices.<br><small>A visual concept with illustrative sample content.</small></span>
         </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
       </div>
 
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Clothing</span>
-          <span class="badge badge-hot">Hot</span>
+      <div class="vk-hero-art" aria-label="A collage of fashion and lifestyle inspiration">
+        <div class="vk-hero-photo-main">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=85" alt="A carefully styled collection of clothing and accessories" fetchpriority="high">
         </div>
-        <div class="product-icon">👚</div>
-        <h3 class="product-name">Oversized Co-ord Set</h3>
-        <p class="product-desc">The co-ord set everyone's wearing this summer. Relaxed fit, breathable fabric, perfect for brunches & casual outings.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹999</span>
-            <span class="product-mrp">₹1,799</span>
-          </div>
-          <span class="product-platform flipkart">Flipkart</span>
+        <div class="vk-hero-photo-small">
+          <img src="image/beauty/swiss-beauty-moisturiser.jpg" alt="Skincare product detail">
         </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
+        <div class="vk-hero-stamp"><span>THE</span><strong>GOOD<br>FIND</strong><span>CLUB&nbsp; · &nbsp;VK</span></div>
+        <div class="vk-hero-caption"><span class="vk-caption-kicker">A FRESH PERSPECTIVE</span><strong>Find your<br>kind of vibe.</strong></div>
+      </div>
+    </section>
+
+    <section class="vk-values" aria-label="What you can discover at VibeKart">
+      <div class="vk-shell vk-values-inner">
+        <span>STYLE THAT SPEAKS</span><i aria-hidden="true">✳</i>
+        <span>EVERYDAY ESSENTIALS</span><i aria-hidden="true">✳</i>
+        <span>IDEAS WORTH KEEPING</span><i aria-hidden="true">✳</i>
+        <span>SMALL THINGS, BIG JOY</span>
+      </div>
+    </section>
+
+    <section class="vk-section vk-shell" id="categories" aria-labelledby="categories-title">
+      <div class="vk-section-heading">
+        <div>
+          <p class="vk-eyebrow">A WORLD OF LITTLE DISCOVERIES</p>
+          <h2 id="categories-title">Explore by <em>interest.</em></h2>
+        </div>
+        <p class="vk-section-intro">From everyday staples to the occasional unexpected favourite, start wherever your curiosity takes you.</p>
       </div>
 
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Clothing</span>
-          <span class="badge badge-new">New</span>
-        </div>
-        <div class="product-icon">🧣</div>
-        <h3 class="product-name">Boho Printed Kurti</h3>
-        <p class="product-desc">Elegant boho print, soft cotton fabric. Pairs perfectly with jeans or palazzos. A wardrobe essential under ₹600.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹549</span>
-            <span class="product-mrp">₹999</span>
-          </div>
-          <span class="product-platform amazon">Amazon</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
+      <div class="vk-category-grid">
+        <a class="vk-category-card vk-category-fashion" href="clothing.html">
+          <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=85" alt="Contemporary fashion styling" loading="lazy">
+          <span class="vk-category-number">01 / STYLE</span>
+          <span class="vk-category-title">Fashion <b aria-hidden="true">↗</b></span>
+        </a>
+        <a class="vk-category-card vk-category-beauty" href="beauty.html">
+          <img src="image/beauty/swiss-beauty-moisturiser.jpg" alt="Skincare and beauty essentials" loading="lazy">
+          <span class="vk-category-number">02 / CARE</span>
+          <span class="vk-category-title">Beauty <b aria-hidden="true">↗</b></span>
+        </a>
+        <a class="vk-category-card vk-category-jewellery" href="jewellery.html">
+          <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=900&q=85" alt="Minimal jewellery and accessories" loading="lazy">
+          <span class="vk-category-number">03 / DETAILS</span>
+          <span class="vk-category-title">Jewellery <b aria-hidden="true">↗</b></span>
+        </a>
+        <a class="vk-category-card vk-category-books" href="books.html">
+          <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=900&q=85" alt="Books ready to be explored" loading="lazy">
+          <span class="vk-category-number">04 / IDEAS</span>
+          <span class="vk-category-title">Books & learning <b aria-hidden="true">↗</b></span>
+        </a>
+        <a class="vk-category-card vk-category-deals" href="deals.html">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85" alt="Over-ear headphones and everyday tech" loading="lazy">
+          <span class="vk-category-number">05 / GOOD FINDS</span>
+          <span class="vk-category-title">Deals & more <b aria-hidden="true">↗</b></span>
+        </a>
       </div>
+    </section>
 
+    <section class="vk-featured-section" id="featured" aria-labelledby="featured-title">
+      <div class="vk-shell">
+        <div class="vk-section-heading vk-featured-heading">
+          <div>
+            <p class="vk-eyebrow">THE VIBEKART SHORTLIST</p>
+            <h2 id="featured-title">A few things catching<br>our <em>eye.</em></h2>
+          </div>
+          <div class="vk-featured-side">
+            <label class="vk-search" for="vk-search-input">
+              <span aria-hidden="true">⌕</span>
+              <input id="vk-search-input" type="search" placeholder="Search the shortlist" autocomplete="off">
+              <kbd>/</kbd>
+            </label>
+            <p>Use the search to find a category or idea.</p>
+          </div>
+        </div>
+
+        <div class="vk-product-grid" id="vk-product-grid">
+          <article class="vk-product-card" data-search="fashion clothing floral dress style outfit">
+            <a class="vk-product-image" href="clothing.html" aria-label="Explore fashion picks">
+              <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=85" alt="A look from the fashion edit" loading="lazy">
+              <span class="vk-image-label">THE STYLE EDIT</span>
+              <span class="vk-image-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="vk-product-meta"><span>01 / FASHION</span><span>STYLE NOTES</span></div>
+            <h3>Pieces with a point of view</h3>
+            <p>Easy-to-wear ideas, expressive details and fresh outfit inspiration.</p>
+            <a class="vk-card-link" href="clothing.html">Explore fashion <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="vk-product-card" data-search="beauty skincare moisturiser self care skin care">
+            <a class="vk-product-image vk-image-beauty" href="beauty.html" aria-label="Explore beauty picks">
+              <img src="image/beauty/swiss-beauty-moisturiser.jpg" alt="A moisturiser from the beauty edit" loading="lazy">
+              <span class="vk-image-label">THE CARE EDIT</span>
+              <span class="vk-image-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="vk-product-meta"><span>02 / BEAUTY</span><span>DAILY RITUALS</span></div>
+            <h3>Make room for a little care</h3>
+            <p>Beauty and skincare discoveries to help shape your everyday routine.</p>
+            <a class="vk-card-link" href="beauty.html">Explore beauty <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="vk-product-card" data-search="jewellery accessories earrings necklace rings minimal details">
+            <a class="vk-product-image" href="jewellery.html" aria-label="Explore jewellery picks">
+              <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=900&q=85" alt="A selection of jewellery details" loading="lazy">
+              <span class="vk-image-label">THE DETAILS EDIT</span>
+              <span class="vk-image-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="vk-product-meta"><span>03 / ACCESSORIES</span><span>FINISHING TOUCHES</span></div>
+            <h3>The little details matter</h3>
+            <p>Accessories and finishing touches that make an everyday look yours.</p>
+            <a class="vk-card-link" href="jewellery.html">Explore jewellery <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="vk-product-card" data-search="books reading learning ideas habits money personal growth">
+            <a class="vk-product-image" href="books.html" aria-label="Explore books and learning picks">
+              <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=900&q=85" alt="A stack of books for the curious" loading="lazy">
+              <span class="vk-image-label">THE IDEAS EDIT</span>
+              <span class="vk-image-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="vk-product-meta"><span>04 / BOOKS</span><span>FOOD FOR THOUGHT</span></div>
+            <h3>Something worth getting lost in</h3>
+            <p>Books, useful ideas and small sparks of inspiration for curious minds.</p>
+            <a class="vk-card-link" href="books.html">Explore books <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+        <p class="vk-no-results" id="vk-no-results" hidden>No matching finds yet. Try another search.</p>
+        <div class="vk-featured-bottom"><a class="vk-button vk-button-outline" href="deals.html">See all categories <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="vk-story-band" id="about">
+      <div class="vk-shell vk-story-inner">
+        <div class="vk-story-mark" aria-hidden="true">VK<span>.</span></div>
+        <div class="vk-story-copy">
+          <p class="vk-eyebrow">NOT MORE STUFF. BETTER DISCOVERIES.</p>
+          <h2>Less noise.<br><em>More of what feels like you.</em></h2>
+          <p>VibeKart is a place to browse with curiosity. We bring together ideas across style, self-care, reading and everyday living, so finding your next favourite feels a little easier.</p>
+          <a class="vk-button vk-button-light" href="about.html">A little about us <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="vk-story-image">
+          <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1000&q=85" alt="A calm, thoughtfully styled reading and living space" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="vk-note-section vk-shell">
+      <div class="vk-note-icon" aria-hidden="true">✳</div>
+      <div>
+        <p class="vk-eyebrow">A NOTE ON THIS DEMO</p>
+        <h2>Good design starts with<br><em>the details.</em></h2>
+      </div>
+      <p class="vk-note-copy">The product names, descriptions and imagery on this website are illustrative sample content, included to demonstrate the design and browsing experience.</p>
+      <a class="vk-text-link" href="affiliate-disclaimer.html">About this demo <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="vk-footer">
+    <div class="vk-shell">
+      <div class="vk-footer-main">
+        <div class="vk-footer-brand">
+          <a class="vk-logo vk-logo-light" href="index.html">vibe<span>kart</span><i>.</i></a>
+          <p>A considered edit of things worth discovering. Find your kind of vibe.</p>
+        </div>
+        <div class="vk-footer-col"><h2>Explore</h2><a href="clothing.html">Fashion</a><a href="beauty.html">Beauty</a><a href="jewellery.html">Jewellery</a><a href="books.html">Books & learning</a><a href="deals.html">Deals</a></div>
+        <div class="vk-footer-col"><h2>VibeKart</h2><a href="about.html">Our story</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy note</a><a href="affiliate-disclaimer.html">About this demo</a></div>
+      </div>
+      <div class="vk-footer-bottom">
+        <span>© <span id="vk-year">2026</span> VibeKart. All rights reserved.</span>
+        <span>Made for the curious.</span>
+      </div>
+      <p class="vk-disclosure">VibeKart is a website-design demonstration. Product names, descriptions and imagery are illustrative sample content, not a live product catalogue.</p>
     </div>
-  </section>
-  <!-- ===== END CLOTHING SECTION ===== -->
-   <!-- ===== BEAUTY SECTION ===== -->
-  <section class="product-section" id="beauty">
-
-    <div class="section-header">
-      <div class="section-header-left">
-        <p class="section-tag">💄 Section 02</p>
-        <h2>Beauty & Skincare</h2>
-        <p class="section-desc">Viral skincare & makeup finds from Reels — honest reviews, real results.</p>
-      </div>
-      <a href="beauty.html" class="view-all">View all →</a>
-    </div>
-
-    <div class="products-grid">
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Beauty</span>
-          <span class="badge badge-viral">Viral</span>
-        </div>
-        <div class="product-icon">💆</div>
-        <h3 class="product-name">Facial Gua Sha Tool Set</h3>
-        <p class="product-desc">Reduce puffiness, sculpt your jawline & de-stress in just 5 minutes a day. Rose quartz stone with guide included. All over skincare Reels.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹449</span>
-            <span class="product-mrp">₹999</span>
-          </div>
-          <span class="product-platform amazon">Amazon</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Beauty</span>
-          <span class="badge badge-hot">Hot</span>
-        </div>
-        <div class="product-icon">✨</div>
-        <h3 class="product-name">Vitamin C Serum</h3>
-        <p class="product-desc">Brightens skin, fades dark spots & gives you that glass skin glow. Dermatologist tested, suitable for all skin types. Best seller on Nykaa.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹349</span>
-            <span class="product-mrp">₹699</span>
-          </div>
-          <span class="product-platform nykaa">Nykaa</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Beauty</span>
-          <span class="badge badge-new">New</span>
-        </div>
-        <div class="product-icon">💋</div>
-        <h3 class="product-name">Lip Gloss Set — 6 Shades</h3>
-        <p class="product-desc">Non-sticky, long-lasting formula with a mirror-like shine. 6 gorgeous shades in one set. The lip combo everyone's ordering right now.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹349</span>
-            <span class="product-mrp">₹650</span>
-          </div>
-          <span class="product-platform amazon">Amazon</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-    </div>
-  </section>
-  <!-- ===== END BEAUTY SECTION ===== -->
-   <!-- ===== JEWELLERY SECTION ===== -->
-  <section class="product-section" id="jewellery">
-
-    <div class="section-header">
-      <div class="section-header-left">
-        <p class="section-tag">💍 Section 03</p>
-        <h2>Jewellery & Accessories</h2>
-        <p class="section-desc">Affordable jewellery that looks expensive — rings, earrings, necklaces & more.</p>
-      </div>
-      <a href="jewellery.html" class="view-all">View all →</a>
-    </div>
-
-    <div class="products-grid">
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Jewellery</span>
-          <span class="badge badge-viral">Viral</span>
-        </div>
-        <div class="product-icon">💍</div>
-        <h3 class="product-name">Minimal Silver Ring Set</h3>
-        <p class="product-desc">Set of 5 stackable silver rings — dainty, minimal & totally aesthetic. Tarnish-resistant. The ring stack all over Pinterest & Reels right now.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹499</span>
-            <span class="product-mrp">₹999</span>
-          </div>
-          <span class="product-platform amazon">Amazon</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Jewellery</span>
-          <span class="badge badge-hot">Hot</span>
-        </div>
-        <div class="product-icon">📿</div>
-        <h3 class="product-name">Layered Pearl Necklace</h3>
-        <p class="product-desc">3-layer faux pearl necklace with a gold-tone chain. Elegant yet affordable. Pairs beautifully with both western & ethnic outfits.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹349</span>
-            <span class="product-mrp">₹799</span>
-          </div>
-          <span class="product-platform myntra">Myntra</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Jewellery</span>
-          <span class="badge badge-new">New</span>
-        </div>
-        <div class="product-icon">✨</div>
-        <h3 class="product-name">Oxidised Jhumka Earrings</h3>
-        <p class="product-desc">Traditional oxidised silver jhumkas with a boho twist. Lightweight, hypoallergenic & perfect for festive looks or everyday ethnic wear.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹279</span>
-            <span class="product-mrp">₹599</span>
-          </div>
-          <span class="product-platform amazon">Amazon</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-    </div>
-  </section>
-  <!-- ===== END JEWELLERY SECTION ===== -->
-  <!-- ===== BOOKS SECTION ===== -->
-  <section class="product-section" id="books">
-
-    <div class="section-header">
-      <div class="section-header-left">
-        <p class="section-tag">📚 Section 04</p>
-        <h2>Books & Learning</h2>
-        <p class="section-desc">Bestselling books, self-help gems & must-reads — handpicked & updated every week.</p>
-      </div>
-      <a href="books.html" class="view-all">View all →</a>
-    </div>
-
-    <div class="products-grid">
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Books</span>
-          <span class="badge badge-viral">Viral</span>
-        </div>
-        <div class="product-icon">📖</div>
-        <h3 class="product-name">Atomic Habits — James Clear</h3>
-        <p class="product-desc">The #1 bestseller on building good habits & breaking bad ones. Life-changing framework used by millions. The most gifted book on Amazon right now.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹399</span>
-            <span class="product-mrp">₹799</span>
-          </div>
-          <span class="product-platform amazon">Amazon</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Books</span>
-          <span class="badge badge-hot">Hot</span>
-        </div>
-        <div class="product-icon">📗</div>
-        <h3 class="product-name">The Psychology of Money</h3>
-        <p class="product-desc">Timeless lessons on wealth, greed & happiness. The finance book that doesn't feel like a finance book. All over BookTok & Instagram this month.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹349</span>
-            <span class="product-mrp">₹699</span>
-          </div>
-          <span class="product-platform amazon">Amazon</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Books</span>
-          <span class="badge badge-new">New</span>
-        </div>
-        <div class="product-icon">📘</div>
-        <h3 class="product-name">Ikigai — Héctor García</h3>
-        <p class="product-desc">The Japanese secret to a long & happy life. A short, powerful read about finding your purpose. Perfect gift for anyone feeling lost or stuck.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹299</span>
-            <span class="product-mrp">₹499</span>
-          </div>
-          <span class="product-platform flipkart">Flipkart</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-    </div>
-  </section>
-  <!-- ===== END BOOKS SECTION ===== -->
-   
-  <!-- ===== HOT DEALS SECTION ===== -->
-  <section class="product-section" id="deals">
-
-    <div class="section-header">
-      <div class="section-header-left">
-        <p class="section-tag">🔥 Section 05</p>
-        <h2>Hot Deals Right Now</h2>
-        <p class="section-desc">The biggest discounts of the week across every category — grab them before they're gone.</p>
-      </div>
-      <a href="deals.html" class="view-all">View all →</a>
-    </div>
-
-    <div class="products-grid">
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Beauty</span>
-          <span class="badge badge-deal">Deal</span>
-        </div>
-        <div class="product-icon">💆</div>
-        <h3 class="product-name">Facial Gua Sha Tool Set</h3>
-        <p class="product-desc">Reduce puffiness, sculpt your jawline & de-stress in 5 minutes a day. Rose quartz stone + guide included. All over skincare Reels.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹449</span>
-            <span class="product-mrp">₹999</span>
-          </div>
-          <span class="product-platform amazon">Amazon</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Gadgets</span>
-          <span class="badge badge-deal">Deal</span>
-        </div>
-        <div class="product-icon">🖱️</div>
-        <h3 class="product-name">Silent Ergonomic Wireless Mouse</h3>
-        <p class="product-desc">Click-free, ergonomic shape, 2.4GHz wireless. Works on any surface. 12-month battery life. The WFH upgrade that's only ₹599 right now.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹599</span>
-            <span class="product-mrp">₹1,299</span>
-          </div>
-          <span class="product-platform amazon">Amazon</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Clothing</span>
-          <span class="badge badge-deal">Deal</span>
-        </div>
-        <div class="product-icon">🔆</div>
-        <h3 class="product-name">Ring Light 10" with Stand</h3>
-        <p class="product-desc">3 color modes, adjustable brightness, phone holder included. Instantly better Reels, calls & selfies. The creator essential under ₹1,000.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹899</span>
-            <span class="product-mrp">₹2,499</span>
-          </div>
-          <span class="product-platform flipkart">Flipkart</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-    </div>
-  </section>
-  <!-- ===== END HOT DEALS SECTION ===== -->
-   <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-
-    <div class="footer-top">
-
-      <div class="footer-brand">
-        <a href="index.html" class="logo">VibeKart</a>
-        <p class="footer-tagline">Curating the internet's most talked-about products. Updated every week, honest always.</p>
-        <div class="footer-socials">
-          <a href="#">📸 Instagram</a>
-          <a href="#">▶ YouTube</a>
-          <a href="#">💬 WhatsApp</a>
-          <a href="#">✈️ Telegram</a>
-        </div>
-      </div>
-
-      <div class="footer-col">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="clothing.html">Clothing & Fashion</a></li>
-          <li><a href="beauty.html">Beauty & Skincare</a></li>
-          <li><a href="jewellery.html">Jewellery & Accessories</a></li>
-          <li><a href="books.html">Books & Learning</a></li>
-          <li><a href="deals.html">Hot Deals</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Follow Us</h4>
-        <ul>
-          <li><a href="https://instagram.com/vibekart" target="_blank">Instagram</a></li>
-          <li><a href="https://youtube.com/vibekart" target="_blank">YouTube Shorts</a></li>
-          <li><a href="https://whatsapp.com/vibekart" target="_blank">WhatsApp Channel</a></li>
-          <li><a href="https://telegram.me/vibekart" target="_blank">Telegram</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Info</h4>
-        <ul>
-          <li><a href="about.html">About VibeKart</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="affiliate-disclaimer.html">Affiliate Disclaimer</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2025 VibeKart. All rights reserved.</p>
-      <p class="footer-disclosure">Affiliate Disclosure: VibeKart participates in the Amazon Associates & Flipkart Affiliate programmes. We earn a small commission when you buy through our links — at no extra cost to you.</p>
-    </div>
-
   </footer>
-  <!-- ===== END FOOTER ===== -->
-
-
-  <script src="script.js"></script>
 </body>
 </html>

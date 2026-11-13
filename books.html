@@ -1,202 +1,205 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Books – VibeKart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ed">
+  <meta name="description" content="Stories, ideas and practical reads to return to. Browse a small reading list across habits, money, purpose and imagination.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Books &amp; learning — VibeKart">
+  <meta property="og:description" content="Stories, ideas and practical reads to return to. Browse a small reading list across habits, money, purpose and imagination.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=1000&q=85">
+  <title>Books &amp; learning — VibeKart</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="category.css">
+  <script src="home.js" defer></script>
+  <script src="category.js" defer></script>
 </head>
-<body>
-
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <a href="index.html" class="logo">VibeKart</a>
-    <ul class="nav-links">
-      <li><a href="clothing.html">Clothing</a></li>
-      <li><a href="beauty.html">Beauty</a></li>
-      <li><a href="jewellery.html">Jewellery</a></li>
-      <li><a href="books.html">Books</a></li>
-      <li><a href="deals.html">Deals</a></li>
-    </ul>
-    <a href="deals.html" class="nav-cta">Weekly Picks</a>
-  </nav>
-  <!-- ===== END NAVBAR ===== -->
-
-  <!-- ===== PAGE HEADER ===== -->
-  <div class="page-header">
-    <p class="page-header-tag">📚 Books</p>
-    <h1>Read More,<br/> <em>Spend Less.</em></h1>
-    <p class="page-header-sub">Bestsellers, hidden gems & viral reads from BookTok & Instagram — handpicked & updated every week.</p>
+<body class="category-page category-books" data-category="books">
+<a class="vk-skip-link" href="#main-content">Skip to content</a>
+<div class="vk-announcement">
+  <p><span class="vk-announcement-dot" aria-hidden="true"></span> A considered edit of things worth discovering</p>
+  <a href="about.html">Get to know VibeKart <span aria-hidden="true">↗</span></a>
+</div>
+<header class="vk-header">
+  <div class="vk-header-inner vk-shell">
+    <a class="vk-logo" href="index.html" aria-label="VibeKart home">vibe<span>kart</span><i>.</i></a>
+    <button class="vk-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="vk-navigation"><span></span><span></span></button>
+    <nav class="vk-navigation" id="vk-navigation" aria-label="Main navigation">
+      <a href="index.html#categories">Discover</a>
+      <a href="index.html#featured">The edit</a>
+      <a href="clothing.html" data-nav-page="clothing">Fashion</a>
+      <a href="beauty.html" data-nav-page="beauty">Beauty</a>
+      <a href="jewellery.html" data-nav-page="jewellery">Jewellery</a>
+      <a href="books.html" data-nav-page="books">Books</a>
+      <a href="deals.html" data-nav-page="deals">The shortlist</a>
+    </nav>
+    <a class="vk-header-cta" href="deals.html">Explore the edit <span aria-hidden="true">↗</span></a>
   </div>
-  <!-- ===== END PAGE HEADER ===== -->
-
-  <!-- ===== BOOKS PRODUCTS ===== -->
-  <section class="product-section">
-    <div class="products-grid">
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Books</span>
-          <span class="badge badge-viral">Viral</span>
-        </div>
-        <div class="product-icon">📖</div>
-        <h3 class="product-name">Atomic Habits — James Clear</h3>
-        <p class="product-desc">The #1 bestseller on building good habits & breaking bad ones. Life-changing framework used by millions. The most gifted book on Amazon right now.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹399</span>
-            <span class="product-mrp">₹799</span>
-          </div>
-          <span class="product-platform amazon">Amazon</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
+</header>
+<main id="main-content">
+  <section class="vk-category-hero vk-shell" aria-labelledby="category-title">
+    <div class="vk-category-copy">
+      <p class="vk-eyebrow"><span class="vk-eyebrow-line"></span>THE READING COLLECTION</p>
+      <p class="vk-breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Books &amp; learning</span></p>
+      <h1 id="category-title">A good book changes<br><em>the angle.</em></h1>
+      <p class="vk-category-description">Some books entertain. Some challenge the way you think. Make room for both.</p>
+      <div class="vk-category-actions">
+        <a class="vk-button vk-button-dark" href="#collection">Explore the collection <span aria-hidden="true">↘</span></a>
+        <a class="vk-text-link" href="index.html#categories">All categories <span aria-hidden="true">↗</span></a>
       </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Books</span>
-          <span class="badge badge-hot">Hot</span>
-        </div>
-        <div class="product-icon">📗</div>
-        <h3 class="product-name">The Psychology of Money — Morgan Housel</h3>
-        <p class="product-desc">Timeless lessons on wealth, greed & happiness. The finance book that doesn't feel like a finance book. All over BookTok & Instagram this month.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹349</span>
-            <span class="product-mrp">₹699</span>
-          </div>
-          <span class="product-platform amazon">Amazon</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Books</span>
-          <span class="badge badge-new">New</span>
-        </div>
-        <div class="product-icon">📘</div>
-        <h3 class="product-name">Ikigai — Héctor García</h3>
-        <p class="product-desc">The Japanese secret to a long & happy life. A short, powerful read about finding your purpose. Perfect gift for anyone feeling lost or stuck.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹299</span>
-            <span class="product-mrp">₹499</span>
-          </div>
-          <span class="product-platform flipkart">Flipkart</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Books</span>
-          <span class="badge badge-viral">Viral</span>
-        </div>
-        <div class="product-icon">📙</div>
-        <h3 class="product-name">Rich Dad Poor Dad — Robert Kiyosaki</h3>
-        <p class="product-desc">The all-time classic on financial education. What the rich teach their kids about money that the poor & middle class don't. A must-read for every age.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹299</span>
-            <span class="product-mrp">₹595</span>
-          </div>
-          <span class="product-platform amazon">Amazon</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Books</span>
-          <span class="badge badge-deal">Deal</span>
-        </div>
-        <div class="product-icon">📕</div>
-        <h3 class="product-name">The Alchemist — Paulo Coelho</h3>
-        <p class="product-desc">A magical story about following your dreams. One of the best-selling books in history. The book that everyone reads at least once in their lifetime.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹199</span>
-            <span class="product-mrp">₹399</span>
-          </div>
-          <span class="product-platform flipkart">Flipkart</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Books</span>
-          <span class="badge badge-hot">Hot</span>
-        </div>
-        <div class="product-icon">📓</div>
-        <h3 class="product-name">Think & Grow Rich — Napoleon Hill</h3>
-        <p class="product-desc">The classic that has created more millionaires than any other book. 13 proven steps to wealth & success. A timeless read that never goes out of style.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹249</span>
-            <span class="product-mrp">₹499</span>
-          </div>
-          <span class="product-platform amazon">Amazon</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
+      <div class="vk-category-footnote"><span aria-hidden="true">✳</span><p>A considered collection of ideas.<br><small>Illustrative sample content for this design demo.</small></p></div>
+    </div>
+    <div class="vk-category-visual">
+      <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=1000&q=85" alt="Books arranged on a wooden table" fetchpriority="high">
+      <div class="vk-category-visual-stamp"><span>THE</span><strong>BOOKS<br>EDIT</strong><span>VIBEKART · 6 PICKS</span></div>
+      <div class="vk-category-visual-caption"><span>BOOKS / COLLECTION 04</span><strong>The reading edit</strong></div>
     </div>
   </section>
-  <!-- ===== END BOOKS PRODUCTS ===== -->
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="index.html" class="logo">VibeKart</a>
-        <p class="footer-tagline">Curating the internet's most talked-about products. Updated every week, honest always.</p>
-        <div class="footer-socials">
-          <a href="#">📸 Instagram</a>
-          <a href="#">▶ YouTube</a>
-          <a href="#">💬 WhatsApp</a>
-          <a href="#">✈️ Telegram</a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="clothing.html">Clothing & Fashion</a></li>
-          <li><a href="beauty.html">Beauty & Skincare</a></li>
-          <li><a href="jewellery.html">Jewellery & Accessories</a></li>
-          <li><a href="books.html">Books</a></li>
-          <li><a href="deals.html">Hot Deals</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Follow Us</h4>
-        <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">YouTube Shorts</a></li>
-          <li><a href="#">WhatsApp Channel</a></li>
-          <li><a href="#">Telegram</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Info</h4>
-        <ul>
-          <li><a href="about.html">About VibeKart</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="affiliate-disclaimer.html">Affiliate Disclaimer</a></li>
-        </ul>
+  <section class="vk-category-ribbon" aria-label="VibeKart values"><div class="vk-shell"><span>CURIOUS FINDS</span><i>✳</i><span>CONSIDERED CHOICES</span><i>✳</i><span>YOUR STYLE, YOUR CALL</span><i>✳</i><span>ALWAYS CHECK THE DETAILS</span></div></section>
+  <section class="vk-category-products vk-shell" id="collection" aria-labelledby="collection-title">
+    <div class="vk-section-heading vk-category-heading">
+      <div><p class="vk-eyebrow">BOOKS / COLLECTION 04</p><h2 id="collection-title">The reading edit <em>starts here.</em></h2><p class="vk-section-intro">A sample reading shelf across personal development, money, philosophy and fiction, designed to show how curated lists can be presented.</p></div>
+      <div class="vk-category-tools">
+        <label class="vk-search-label" for="vk-search-input">FIND SOMETHING</label>
+        <div class="vk-search"><span aria-hidden="true">⌕</span><input id="vk-search-input" type="search" placeholder="Search this collection..." autocomplete="off"><kbd>/</kbd></div>
+        <p><strong id="vk-result-count">6</strong> curated picks</p>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2025 VibeKart. All rights reserved.</p>
-      <p class="footer-disclosure">Affiliate Disclosure: VibeKart participates in the Amazon Associates & Flipkart Affiliate programmes. We earn a small commission when you buy through our links — at no extra cost to you.</p>
+    <p class="vk-image-disclaimer">Images and product details are illustrative sample content, included to demonstrate the collection layout.</p>
+    <div class="vk-product-grid" id="vk-product-grid">
+      <article class="vk-product-card" data-search="atomic habits — james clear a practical guide to making small behaviour changes and building routines that last.">
+      <div class="vk-product-image">
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1000&q=85" alt="A stack of books" loading="lazy">
+        <span class="vk-product-index">01</span>
+        <span class="vk-product-photo-label">VIBEKART EDIT</span>
+      </div>
+      <div class="vk-product-body">
+        <div class="vk-product-overline"><span>BOOKS &AMP; LEARNING</span><span>CURATED FIND</span></div>
+        <h3>Atomic Habits — James Clear</h3>
+        <p>A practical guide to making small behaviour changes and building routines that last.</p>
+        <div class="vk-product-meta"><span class="vk-retailer-status">Sample collection item</span><span class="vk-price-note">Illustrative sample content</span></div>
+        <button class="vk-product-action vk-product-action-muted" type="button" data-product-open data-product-name="Atomic Habits — James Clear" data-product-description="A practical guide to making small behaviour changes and building routines that last.">View sample details <span aria-hidden="true">↗</span></button>
+      </div>
+    </article>
+<article class="vk-product-card" data-search="the psychology of money — morgan housel essays about how people think about money, risk, wealth and personal decisions.">
+      <div class="vk-product-image">
+        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=1000&q=85" alt="Books on a shelf" loading="lazy">
+        <span class="vk-product-index">02</span>
+        <span class="vk-product-photo-label">VIBEKART EDIT</span>
+      </div>
+      <div class="vk-product-body">
+        <div class="vk-product-overline"><span>BOOKS &AMP; LEARNING</span><span>CURATED FIND</span></div>
+        <h3>The Psychology of Money — Morgan Housel</h3>
+        <p>Essays about how people think about money, risk, wealth and personal decisions.</p>
+        <div class="vk-product-meta"><span class="vk-retailer-status">Sample collection item</span><span class="vk-price-note">Illustrative sample content</span></div>
+        <button class="vk-product-action vk-product-action-muted" type="button" data-product-open data-product-name="The Psychology of Money — Morgan Housel" data-product-description="Essays about how people think about money, risk, wealth and personal decisions.">View sample details <span aria-hidden="true">↗</span></button>
+      </div>
+    </article>
+<article class="vk-product-card" data-search="ikigai — héctor garcía &amp; francesc miralles a reflective introduction to the japanese concept of ikigai and finding meaning in everyday life.">
+      <div class="vk-product-image">
+        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1000&q=85" alt="A quiet library interior" loading="lazy">
+        <span class="vk-product-index">03</span>
+        <span class="vk-product-photo-label">VIBEKART EDIT</span>
+      </div>
+      <div class="vk-product-body">
+        <div class="vk-product-overline"><span>BOOKS &AMP; LEARNING</span><span>CURATED FIND</span></div>
+        <h3>Ikigai — Héctor García &amp; Francesc Miralles</h3>
+        <p>A reflective introduction to the Japanese concept of ikigai and finding meaning in everyday life.</p>
+        <div class="vk-product-meta"><span class="vk-retailer-status">Sample collection item</span><span class="vk-price-note">Illustrative sample content</span></div>
+        <button class="vk-product-action vk-product-action-muted" type="button" data-product-open data-product-name="Ikigai — Héctor García &amp; Francesc Miralles" data-product-description="A reflective introduction to the Japanese concept of ikigai and finding meaning in everyday life.">View sample details <span aria-hidden="true">↗</span></button>
+      </div>
+    </article>
+<article class="vk-product-card" data-search="rich dad poor dad — robert kiyosaki a popular personal-finance book contrasting two attitudes toward money and work. consider its ideas critically alongside other financial perspectives.">
+      <div class="vk-product-image">
+        <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=1000&q=85" alt="A book and reading notes" loading="lazy">
+        <span class="vk-product-index">04</span>
+        <span class="vk-product-photo-label">VIBEKART EDIT</span>
+      </div>
+      <div class="vk-product-body">
+        <div class="vk-product-overline"><span>BOOKS &AMP; LEARNING</span><span>CURATED FIND</span></div>
+        <h3>Rich Dad Poor Dad — Robert Kiyosaki</h3>
+        <p>A popular personal-finance book contrasting two attitudes toward money and work. Consider its ideas critically alongside other financial perspectives.</p>
+        <div class="vk-product-meta"><span class="vk-retailer-status">Sample collection item</span><span class="vk-price-note">Illustrative sample content</span></div>
+        <button class="vk-product-action vk-product-action-muted" type="button" data-product-open data-product-name="Rich Dad Poor Dad — Robert Kiyosaki" data-product-description="A popular personal-finance book contrasting two attitudes toward money and work. Consider its ideas critically alongside other financial perspectives.">View sample details <span aria-hidden="true">↗</span></button>
+      </div>
+    </article>
+<article class="vk-product-card" data-search="the alchemist — paulo coelho a fable about a young shepherd’s journey in search of treasure and a sense of purpose.">
+      <div class="vk-product-image">
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1000&q=85" alt="An open book on a desk" loading="lazy">
+        <span class="vk-product-index">05</span>
+        <span class="vk-product-photo-label">VIBEKART EDIT</span>
+      </div>
+      <div class="vk-product-body">
+        <div class="vk-product-overline"><span>BOOKS &AMP; LEARNING</span><span>CURATED FIND</span></div>
+        <h3>The Alchemist — Paulo Coelho</h3>
+        <p>A fable about a young shepherd’s journey in search of treasure and a sense of purpose.</p>
+        <div class="vk-product-meta"><span class="vk-retailer-status">Sample collection item</span><span class="vk-price-note">Illustrative sample content</span></div>
+        <button class="vk-product-action vk-product-action-muted" type="button" data-product-open data-product-name="The Alchemist — Paulo Coelho" data-product-description="A fable about a young shepherd’s journey in search of treasure and a sense of purpose.">View sample details <span aria-hidden="true">↗</span></button>
+      </div>
+    </article>
+<article class="vk-product-card" data-search="think &amp; grow rich — napoleon hill a classic self-development book focused on mindset, goals and personal ambition. read in its historical context.">
+      <div class="vk-product-image">
+        <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=1000&q=85" alt="A reading corner and books" loading="lazy">
+        <span class="vk-product-index">06</span>
+        <span class="vk-product-photo-label">VIBEKART EDIT</span>
+      </div>
+      <div class="vk-product-body">
+        <div class="vk-product-overline"><span>BOOKS &AMP; LEARNING</span><span>CURATED FIND</span></div>
+        <h3>Think &amp; Grow Rich — Napoleon Hill</h3>
+        <p>A classic self-development book focused on mindset, goals and personal ambition. Read in its historical context.</p>
+        <div class="vk-product-meta"><span class="vk-retailer-status">Sample collection item</span><span class="vk-price-note">Illustrative sample content</span></div>
+        <button class="vk-product-action vk-product-action-muted" type="button" data-product-open data-product-name="Think &amp; Grow Rich — Napoleon Hill" data-product-description="A classic self-development book focused on mindset, goals and personal ambition. Read in its historical context.">View sample details <span aria-hidden="true">↗</span></button>
+      </div>
+    </article>
     </div>
-  </footer>
-  <!-- ===== END FOOTER ===== -->
-
-  <script src="script.js"></script>
+    <p class="vk-no-results" id="vk-no-results" hidden>No matching picks. Try another search term.</p>
+  </section>
+  <section class="vk-category-note">
+    <div class="vk-shell vk-category-note-inner">
+      <span class="vk-note-star" aria-hidden="true">✳</span>
+      <div><p class="vk-eyebrow">A QUICK REMINDER</p><h2>Explore with curiosity.<br><em>Choose with care.</em></h2></div>
+      <p>VibeKart is a design concept. Product names, descriptions and images are illustrative sample content used to demonstrate a polished collection page.</p>
+      <a class="vk-text-link" href="affiliate-disclaimer.html">About this demo <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+</main>
+<footer class="vk-footer">
+  <div class="vk-shell">
+    <div class="vk-footer-main">
+      <div class="vk-footer-brand">
+        <a class="vk-logo vk-logo-light" href="index.html">vibe<span>kart</span><i>.</i></a>
+        <p>A considered edit of things to wear, use, read and love. Discover ideas, then choose what feels right for you.</p>
+      </div>
+      <div class="vk-footer-col">
+        <h2>Explore</h2>
+        <a href="clothing.html">Fashion</a><a href="beauty.html">Beauty</a><a href="jewellery.html">Jewellery</a><a href="books.html">Books</a><a href="deals.html">The shortlist</a>
+      </div>
+      <div class="vk-footer-col">
+        <h2>VibeKart</h2>
+        <a href="about.html">Our story</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy note</a><a href="affiliate-disclaimer.html">About this demo</a>
+      </div>
+    </div>
+    <div class="vk-footer-bottom">
+      <p>© <span id="vk-year">2026</span> VibeKart. All rights reserved.</p>
+      <p class="vk-disclosure">This is a website-design demonstration. Product names, descriptions and imagery are illustrative sample content, not a live product catalogue.</p>
+    </div>
+  </div>
+</footer>
+<dialog class="vk-product-dialog" id="vk-product-dialog" aria-labelledby="vk-dialog-title">
+  <div class="vk-dialog-inner">
+    <button class="vk-dialog-close" type="button" aria-label="Close dialog" data-dialog-close>×</button>
+    <p class="vk-eyebrow">SAMPLE COLLECTION ITEM</p>
+    <h2 id="vk-dialog-title">Product details</h2>
+    <p id="vk-dialog-description" class="vk-dialog-description"></p>
+    <p class="vk-dialog-note">This is sample content included to demonstrate the website design. A real business can replace the name, description and imagery with its own catalogue.</p>
+    <button class="vk-button vk-button-dark" type="button" data-dialog-close>Got it <span aria-hidden="true">↗</span></button>
+  </div>
+</dialog>
 </body>
 </html>

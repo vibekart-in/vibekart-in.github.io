@@ -1,202 +1,205 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hot Deals – VibeKart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ed">
+  <meta name="description" content="A rotating collection of finds from across fashion, beauty, accessories and books. This preview does not display unverified discounts or time-sensitive prices.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The shortlist — VibeKart">
+  <meta property="og:description" content="A rotating collection of finds from across fashion, beauty, accessories and books. This preview does not display unverified discounts or time-sensitive prices.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1000&q=85">
+  <title>The shortlist — VibeKart</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="category.css">
+  <script src="home.js" defer></script>
+  <script src="category.js" defer></script>
 </head>
-<body>
-
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <a href="index.html" class="logo">VibeKart</a>
-    <ul class="nav-links">
-      <li><a href="clothing.html">Clothing</a></li>
-      <li><a href="beauty.html">Beauty</a></li>
-      <li><a href="jewellery.html">Jewellery</a></li>
-      <li><a href="books.html">Books</a></li>
-      <li><a href="deals.html">Deals</a></li>
-    </ul>
-    <a href="index.html" class="nav-cta">Weekly Picks</a>
-  </nav>
-  <!-- ===== END NAVBAR ===== -->
-
-  <!-- ===== PAGE HEADER ===== -->
-  <div class="page-header">
-    <p class="page-header-tag">🔥 Hot Deals</p>
-    <h1>Biggest Discounts,<br/> <em>Right Now.</em></h1>
-    <p class="page-header-sub">The best deals across Clothing, Beauty, Jewellery & Books — handpicked & updated every week before they're gone.</p>
+<body class="category-page category-deals" data-category="deals">
+<a class="vk-skip-link" href="#main-content">Skip to content</a>
+<div class="vk-announcement">
+  <p><span class="vk-announcement-dot" aria-hidden="true"></span> A considered edit of things worth discovering</p>
+  <a href="about.html">Get to know VibeKart <span aria-hidden="true">↗</span></a>
+</div>
+<header class="vk-header">
+  <div class="vk-header-inner vk-shell">
+    <a class="vk-logo" href="index.html" aria-label="VibeKart home">vibe<span>kart</span><i>.</i></a>
+    <button class="vk-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="vk-navigation"><span></span><span></span></button>
+    <nav class="vk-navigation" id="vk-navigation" aria-label="Main navigation">
+      <a href="index.html#categories">Discover</a>
+      <a href="index.html#featured">The edit</a>
+      <a href="clothing.html" data-nav-page="clothing">Fashion</a>
+      <a href="beauty.html" data-nav-page="beauty">Beauty</a>
+      <a href="jewellery.html" data-nav-page="jewellery">Jewellery</a>
+      <a href="books.html" data-nav-page="books">Books</a>
+      <a href="deals.html" data-nav-page="deals">The shortlist</a>
+    </nav>
+    <a class="vk-header-cta" href="deals.html">Explore the edit <span aria-hidden="true">↗</span></a>
   </div>
-  <!-- ===== END PAGE HEADER ===== -->
-
-  <!-- ===== DEALS PRODUCTS ===== -->
-  <section class="product-section">
-    <div class="products-grid">
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Clothing</span>
-          <span class="badge badge-deal">Deal</span>
-        </div>
-        <div class="product-icon">👗</div>
-        <h3 class="product-name">Floral Summer Dress</h3>
-        <p class="product-desc">Light, breezy & effortlessly stylish. This floral dress is all over Instagram Reels this season. Available in 6 colours. Massive discount this week.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹799</span>
-            <span class="product-mrp">₹1,499</span>
-          </div>
-          <span class="product-platform amazon">Amazon</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
+</header>
+<main id="main-content">
+  <section class="vk-category-hero vk-shell" aria-labelledby="category-title">
+    <div class="vk-category-copy">
+      <p class="vk-eyebrow"><span class="vk-eyebrow-line"></span>THE VIBEKART SHORTLIST</p>
+      <p class="vk-breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>The shortlist</span></p>
+      <h1 id="category-title">Good finds, gathered<br><em>in one place.</em></h1>
+      <p class="vk-category-description">A little of everything in one place. Browse this sample shortlist and explore how a mixed collection can be presented.</p>
+      <div class="vk-category-actions">
+        <a class="vk-button vk-button-dark" href="#collection">Explore the collection <span aria-hidden="true">↘</span></a>
+        <a class="vk-text-link" href="index.html#categories">All categories <span aria-hidden="true">↗</span></a>
       </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Beauty</span>
-          <span class="badge badge-deal">Deal</span>
-        </div>
-        <div class="product-icon">💆</div>
-        <h3 class="product-name">Facial Gua Sha Tool Set</h3>
-        <p class="product-desc">Reduce puffiness, sculpt your jawline & de-stress in 5 minutes a day. Rose quartz stone + guide included. All over skincare Reels.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹449</span>
-            <span class="product-mrp">₹999</span>
-          </div>
-          <span class="product-platform amazon">Amazon</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Jewellery</span>
-          <span class="badge badge-deal">Deal</span>
-        </div>
-        <div class="product-icon">💍</div>
-        <h3 class="product-name">Minimal Silver Ring Set</h3>
-        <p class="product-desc">Set of 5 stackable silver rings — dainty, minimal & totally aesthetic. Tarnish-resistant. The ring stack all over Pinterest & Reels right now.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹499</span>
-            <span class="product-mrp">₹999</span>
-          </div>
-          <span class="product-platform amazon">Amazon</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Books</span>
-          <span class="badge badge-deal">Deal</span>
-        </div>
-        <div class="product-icon">📖</div>
-        <h3 class="product-name">Atomic Habits — James Clear</h3>
-        <p class="product-desc">The #1 bestseller on building good habits & breaking bad ones. Life-changing framework used by millions. The most gifted book on Amazon right now.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹399</span>
-            <span class="product-mrp">₹799</span>
-          </div>
-          <span class="product-platform amazon">Amazon</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Beauty</span>
-          <span class="badge badge-deal">Deal</span>
-        </div>
-        <div class="product-icon">🪞</div>
-        <h3 class="product-name">Makeup Brush Set — 12pcs</h3>
-        <p class="product-desc">Professional quality brushes at an unbeatable price. Super soft, no shedding, comes in a cute travel pouch. A must-have for every makeup lover.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹499</span>
-            <span class="product-mrp">₹1,199</span>
-          </div>
-          <span class="product-platform amazon">Amazon</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
-      <div class="product-card">
-        <div class="product-badges">
-          <span class="badge badge-category">Books</span>
-          <span class="badge badge-deal">Deal</span>
-        </div>
-        <div class="product-icon">📕</div>
-        <h3 class="product-name">The Alchemist — Paulo Coelho</h3>
-        <p class="product-desc">A magical story about following your dreams. One of the best-selling books in history. The book that everyone reads at least once in their lifetime.</p>
-        <div class="product-footer">
-          <div class="product-pricing">
-            <span class="product-price">₹199</span>
-            <span class="product-mrp">₹399</span>
-          </div>
-          <span class="product-platform flipkart">Flipkart</span>
-        </div>
-        <a href="YOUR_AFFILIATE_LINK" target="_blank" class="buy-btn">Buy ↗</a>
-      </div>
-
+      <div class="vk-category-footnote"><span aria-hidden="true">✳</span><p>A considered collection of ideas.<br><small>Illustrative sample content for this design demo.</small></p></div>
+    </div>
+    <div class="vk-category-visual">
+      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1000&q=85" alt="A curated collection of everyday lifestyle products" fetchpriority="high">
+      <div class="vk-category-visual-stamp"><span>THE</span><strong>GOOD<br>EDIT</strong><span>VIBEKART · 6 PICKS</span></div>
+      <div class="vk-category-visual-caption"><span>THE SHORTLIST / COLLECTION 05</span><strong>The current shortlist</strong></div>
     </div>
   </section>
-  <!-- ===== END DEALS PRODUCTS ===== -->
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="index.html" class="logo">VibeKart</a>
-        <p class="footer-tagline">Curating the internet's most talked-about products. Updated every week, honest always.</p>
-        <div class="footer-socials">
-          <a href="#">📸 Instagram</a>
-          <a href="#">▶ YouTube</a>
-          <a href="#">💬 WhatsApp</a>
-          <a href="#">✈️ Telegram</a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="clothing.html">Clothing & Fashion</a></li>
-          <li><a href="beauty.html">Beauty & Skincare</a></li>
-          <li><a href="jewellery.html">Jewellery & Accessories</a></li>
-          <li><a href="books.html">Books</a></li>
-          <li><a href="deals.html">Hot Deals</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Follow Us</h4>
-        <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">YouTube Shorts</a></li>
-          <li><a href="#">WhatsApp Channel</a></li>
-          <li><a href="#">Telegram</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Info</h4>
-        <ul>
-          <li><a href="about.html">About VibeKart</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="affiliate-disclaimer.html">Affiliate Disclaimer</a></li>
-        </ul>
+  <section class="vk-category-ribbon" aria-label="VibeKart values"><div class="vk-shell"><span>CURIOUS FINDS</span><i>✳</i><span>CONSIDERED CHOICES</span><i>✳</i><span>YOUR STYLE, YOUR CALL</span><i>✳</i><span>ALWAYS CHECK THE DETAILS</span></div></section>
+  <section class="vk-category-products vk-shell" id="collection" aria-labelledby="collection-title">
+    <div class="vk-section-heading vk-category-heading">
+      <div><p class="vk-eyebrow">THE SHORTLIST / COLLECTION 05</p><h2 id="collection-title">The current shortlist <em>starts here.</em></h2><p class="vk-section-intro">A mixed collection of illustrative product ideas. The sample cards show how a rotating or curated shortlist could look.</p></div>
+      <div class="vk-category-tools">
+        <label class="vk-search-label" for="vk-search-input">FIND SOMETHING</label>
+        <div class="vk-search"><span aria-hidden="true">⌕</span><input id="vk-search-input" type="search" placeholder="Search this collection..." autocomplete="off"><kbd>/</kbd></div>
+        <p><strong id="vk-result-count">6</strong> curated picks</p>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2025 VibeKart. All rights reserved.</p>
-      <p class="footer-disclosure">Affiliate Disclosure: VibeKart participates in the Amazon Associates & Flipkart Affiliate programmes. We earn a small commission when you buy through our links — at no extra cost to you.</p>
+    <p class="vk-image-disclaimer">Images and product details are illustrative sample content, included to demonstrate the collection layout.</p>
+    <div class="vk-product-grid" id="vk-product-grid">
+      <article class="vk-product-card" data-search="floral summer dress a light, easy silhouette for warm days. style it with understated accessories for a relaxed daytime look.">
+      <div class="vk-product-image">
+        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=85" alt="A floral summer outfit" loading="lazy">
+        <span class="vk-product-index">01</span>
+        <span class="vk-product-photo-label">VIBEKART EDIT</span>
+      </div>
+      <div class="vk-product-body">
+        <div class="vk-product-overline"><span>THE SHORTLIST</span><span>CURATED FIND</span></div>
+        <h3>Floral Summer Dress</h3>
+        <p>A light, easy silhouette for warm days. Style it with understated accessories for a relaxed daytime look.</p>
+        <div class="vk-product-meta"><span class="vk-retailer-status">Sample collection item</span><span class="vk-price-note">Illustrative sample content</span></div>
+        <button class="vk-product-action vk-product-action-muted" type="button" data-product-open data-product-name="Floral Summer Dress" data-product-description="A light, easy silhouette for warm days. Style it with understated accessories for a relaxed daytime look.">View sample details <span aria-hidden="true">↗</span></button>
+      </div>
+    </article>
+<article class="vk-product-card" data-search="facial gua sha tool set a skincare accessory concept for a slower self-care ritual. check the material, cleaning instructions and any product guidance before use.">
+      <div class="vk-product-image">
+        <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1000&q=85" alt="Skincare accessories" loading="lazy">
+        <span class="vk-product-index">02</span>
+        <span class="vk-product-photo-label">VIBEKART EDIT</span>
+      </div>
+      <div class="vk-product-body">
+        <div class="vk-product-overline"><span>THE SHORTLIST</span><span>CURATED FIND</span></div>
+        <h3>Facial Gua Sha Tool Set</h3>
+        <p>A skincare accessory concept for a slower self-care ritual. A sample skincare accessory concept, with space for material, care and usage details.</p>
+        <div class="vk-product-meta"><span class="vk-retailer-status">Sample collection item</span><span class="vk-price-note">Illustrative sample content</span></div>
+        <button class="vk-product-action vk-product-action-muted" type="button" data-product-open data-product-name="Facial Gua Sha Tool Set" data-product-description="A skincare accessory concept for a slower self-care ritual. A sample skincare accessory concept, with space for material, care and usage details.">View sample details <span aria-hidden="true">↗</span></button>
+      </div>
+    </article>
+<article class="vk-product-card" data-search="minimal silver ring set a stackable ring styling idea. sample metal, finish, sizing and care details for this illustrative item.">
+      <div class="vk-product-image">
+        <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1000&q=85" alt="Minimal jewellery" loading="lazy">
+        <span class="vk-product-index">03</span>
+        <span class="vk-product-photo-label">VIBEKART EDIT</span>
+      </div>
+      <div class="vk-product-body">
+        <div class="vk-product-overline"><span>THE SHORTLIST</span><span>CURATED FIND</span></div>
+        <h3>Minimal Silver Ring Set</h3>
+        <p>A stackable ring styling idea. Explore the material, finish, sizing and care details for this sample item.</p>
+        <div class="vk-product-meta"><span class="vk-retailer-status">Sample collection item</span><span class="vk-price-note">Illustrative sample content</span></div>
+        <button class="vk-product-action vk-product-action-muted" type="button" data-product-open data-product-name="Minimal Silver Ring Set" data-product-description="A stackable ring styling idea. Explore the material, finish, sizing and care details for this sample item.">View sample details <span aria-hidden="true">↗</span></button>
+      </div>
+    </article>
+<article class="vk-product-card" data-search="atomic habits — james clear a practical guide to making small behaviour changes and building routines that last.">
+      <div class="vk-product-image">
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1000&q=85" alt="A stack of books" loading="lazy">
+        <span class="vk-product-index">04</span>
+        <span class="vk-product-photo-label">VIBEKART EDIT</span>
+      </div>
+      <div class="vk-product-body">
+        <div class="vk-product-overline"><span>THE SHORTLIST</span><span>CURATED FIND</span></div>
+        <h3>Atomic Habits — James Clear</h3>
+        <p>A practical guide to making small behaviour changes and building routines that last.</p>
+        <div class="vk-product-meta"><span class="vk-retailer-status">Sample collection item</span><span class="vk-price-note">Illustrative sample content</span></div>
+        <button class="vk-product-action vk-product-action-muted" type="button" data-product-open data-product-name="Atomic Habits — James Clear" data-product-description="A practical guide to making small behaviour changes and building routines that last.">View sample details <span aria-hidden="true">↗</span></button>
+      </div>
+    </article>
+<article class="vk-product-card" data-search="makeup brush set 12pcs sample brush types makeup kit beauty tools illustrative product">
+      <div class="vk-product-image">
+        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=1000&q=85" alt="Makeup brushes" loading="lazy">
+        <span class="vk-product-index">05</span>
+        <span class="vk-product-photo-label">VIBEKART EDIT</span>
+      </div>
+      <div class="vk-product-body">
+        <div class="vk-product-overline"><span>THE SHORTLIST</span><span>CURATED FIND</span></div>
+        <h3>Makeup Brush Set — 12pcs</h3>
+        <p>A sample brush-set concept for building or refreshing a makeup kit, included to demonstrate a product-card layout.</p>
+        <div class="vk-product-meta"><span class="vk-retailer-status">Sample collection item</span><span class="vk-price-note">Illustrative sample content</span></div>
+        <button class="vk-product-action vk-product-action-muted" type="button" data-product-open data-product-name="Makeup Brush Set — 12pcs" data-product-description="A sample brush-set concept for building or refreshing a makeup kit, included to demonstrate a product-card layout.">View sample details <span aria-hidden="true">↗</span></button>
+      </div>
+    </article>
+<article class="vk-product-card" data-search="the alchemist — paulo coelho a fable about a young shepherd’s journey in search of treasure and a sense of purpose.">
+      <div class="vk-product-image">
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1000&q=85" alt="A book on a desk" loading="lazy">
+        <span class="vk-product-index">06</span>
+        <span class="vk-product-photo-label">VIBEKART EDIT</span>
+      </div>
+      <div class="vk-product-body">
+        <div class="vk-product-overline"><span>THE SHORTLIST</span><span>CURATED FIND</span></div>
+        <h3>The Alchemist — Paulo Coelho</h3>
+        <p>A fable about a young shepherd’s journey in search of treasure and a sense of purpose.</p>
+        <div class="vk-product-meta"><span class="vk-retailer-status">Sample collection item</span><span class="vk-price-note">Illustrative sample content</span></div>
+        <button class="vk-product-action vk-product-action-muted" type="button" data-product-open data-product-name="The Alchemist — Paulo Coelho" data-product-description="A fable about a young shepherd’s journey in search of treasure and a sense of purpose.">View sample details <span aria-hidden="true">↗</span></button>
+      </div>
+    </article>
     </div>
-  </footer>
-  <!-- ===== END FOOTER ===== -->
-
-  <script src="script.js"></script>
+    <p class="vk-no-results" id="vk-no-results" hidden>No matching picks. Try another search term.</p>
+  </section>
+  <section class="vk-category-note">
+    <div class="vk-shell vk-category-note-inner">
+      <span class="vk-note-star" aria-hidden="true">✳</span>
+      <div><p class="vk-eyebrow">A QUICK REMINDER</p><h2>Explore with curiosity.<br><em>Choose with care.</em></h2></div>
+      <p>VibeKart is a design concept. Product names, descriptions and images are illustrative sample content used to demonstrate a polished collection page.</p>
+      <a class="vk-text-link" href="affiliate-disclaimer.html">About this demo <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+</main>
+<footer class="vk-footer">
+  <div class="vk-shell">
+    <div class="vk-footer-main">
+      <div class="vk-footer-brand">
+        <a class="vk-logo vk-logo-light" href="index.html">vibe<span>kart</span><i>.</i></a>
+        <p>A considered edit of things to wear, use, read and love. Discover ideas, then choose what feels right for you.</p>
+      </div>
+      <div class="vk-footer-col">
+        <h2>Explore</h2>
+        <a href="clothing.html">Fashion</a><a href="beauty.html">Beauty</a><a href="jewellery.html">Jewellery</a><a href="books.html">Books</a><a href="deals.html">The shortlist</a>
+      </div>
+      <div class="vk-footer-col">
+        <h2>VibeKart</h2>
+        <a href="about.html">Our story</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy note</a><a href="affiliate-disclaimer.html">About this demo</a>
+      </div>
+    </div>
+    <div class="vk-footer-bottom">
+      <p>© <span id="vk-year">2026</span> VibeKart. All rights reserved.</p>
+      <p class="vk-disclosure">This is a website-design demonstration. Product names, descriptions and imagery are illustrative sample content, not a live product catalogue.</p>
+    </div>
+  </div>
+</footer>
+<dialog class="vk-product-dialog" id="vk-product-dialog" aria-labelledby="vk-dialog-title">
+  <div class="vk-dialog-inner">
+    <button class="vk-dialog-close" type="button" aria-label="Close dialog" data-dialog-close>×</button>
+    <p class="vk-eyebrow">SAMPLE COLLECTION ITEM</p>
+    <h2 id="vk-dialog-title">Product details</h2>
+    <p id="vk-dialog-description" class="vk-dialog-description"></p>
+    <p class="vk-dialog-note">This is sample content included to demonstrate the website design. A real business can replace the name, description and imagery with its own catalogue.</p>
+    <button class="vk-button vk-button-dark" type="button" data-dialog-close>Got it <span aria-hidden="true">↗</span></button>
+  </div>
+</dialog>
 </body>
 </html>
